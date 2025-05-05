@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Inscripción</title>
+</head>
+<body>
+  <main>
+    <form action="">
+      <!-- Nombre -->
+      <label for="nombre">
+        <span>¿Cuál es tu nombre?</span><br />
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          autocomplete="name"
+          required
+        />
+      </label>
+      <br /><br />
+
+      <!-- Correo -->
+      <label for="correo">
+        <span>¿Cuál es tu email?</span><br />
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          autocomplete="email"
+          required
+        />
+      </label>
+      <br /><br />
+
+      <!-- País -->
+      <label for="pais">
+        <span>¿Cuál es tu país?</span><br />
+        <input
+          type="text"
+          name="pais"
+          id="pais"
+          autocomplete="country"
+          required
+        />
+      </label>
+      <br /><br />
+
+      <!-- Código Postal -->
+      <label for="cp">
+        <span>¿Cuál es tu código postal?</span><br />
+        <input
+          type="text"
+          name="cp"
+          id="cp"
+          autocomplete="postal-code"
+          required
+        />
+      </label>
+      <br /><br />
+
+      <!-- Carrera (datalist para escribir) -->
+      <label for="carrera">
+        <span>¿Qué carrera vas a elegir?</span><br />
+        <input list="carreras" name="carrera" id="carrera" required>
+        <datalist id="carreras">
+          <option value="TI">
+          <option value="AMBIENTAL">
+          <option value="ZOOTECNIA">
+          <option value="AGRONOMÍA">
+          <option value="PROGRAMACIÓN">
+        </datalist>
+      </label>
+      <br /><br />
+
+      <!-- Curso (datalist) -->
+      <label for="curso">
+        <span>Elige un curso:</span><br />
+        <input list="cursos" name="curso" id="curso" required>
+        <datalist id="cursos">
+          <option value="JavaScript">
+          <option value="HTML5">
+          <option value="CSS3">
+          <option value="Web Standards">
+        </datalist>
+      </label>
+      <br /><br />
+
+      <!-- Botón de enviar -->
+      <input type="submit" value="Enviar" />
+    </form>
+  </main>
+</body>
+</html>
