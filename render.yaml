@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: multi-site-proxy
+    env: docker
+    repo: https://github.com/JonathanNevarez/clone
+    plan: free
+    region: oregon
+    branch: main
+    dockerContext: ./
+    dockerComposeFile: docker-compose.yml
